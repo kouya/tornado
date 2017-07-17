@@ -1,0 +1,91 @@
+.\" Tornado manpage
+.\" 
+.\" This manpage is Copyright (C) 2002 Oliver Feiler
+.\" <kiza@claws-and-paws.com>
+.\" 
+.TH "TORNADO" "6" "31 January 2002" "Games" "Tornado 1.2"
+.SH "NAME"
+.B tornado
+\- Kloon van het orignele C64 spel.
+.SH "SYNOPSIS"
+.B tornado [\-\-connect IP|\-\-demo|\-\-help|\-\-server|\-\-version]
+.SH "DESCRIPTION"
+Het doel van het spel
+.B tornado
+is het huis van de tegenstander te vernietigen met de krachten van regen, sneeuw, hagel, bliksem en de tornado.
+
+Als het spel gestart is geven de twee speler hun namen in.
+Als u het veld leeg laat speelt de computer voor de speler. U ziet twee huizen met de namen van de spelers in de hoek er onder en een wolk boven in beeld. De speler, die aan de beurt is heeft een 
+.I *
+bij zijn naam.
+.P
+Uit het menu in het midden van het scherm kan elke speler een weerstype kiezen. Een tweede menu verschijnt dan waar u de richting die u wilt gebruiken kunt invoeren. Waarschijnlijk heeft u de waarde
+.I windsnelheid 
+onder in beeld opgemerkt. U kiest bijvoorbeeld de waarde
+.I 2
+, als de windsnelheid
+.I \-2
+is. De regel/hagel/sneew/tornado komt dan recht uit de wolk. Echter, de regen zal willekeurig links of rechts uit de wolk komen. Richten is dus niet zo makkelijk als het lijkt.
+.P
+Als u het huis van uw tegenstander (of uw eigen) raakt zald de percentage teller verminderen afhankelijk van hoeveel schade u heeft aangericht. De speler wiens teller als eerste op 
+.I 0%
+staat verliest.
+.P
+De toetsen die u kunt gebruiken in het spel:
+.TP 
+.B s " selecteert sneeuw"
+Sneeuw is een verdigend wapen. Als u een huis raakt met sneeuw, vormt de sneeuw een laag die hagel tegenhoudt. Alleen regen kan die sneeuwlaag weghalen. Bliksem en de tornado veranderen er niet door.
+.TP 
+.B r " selecteert regen"
+Vernietigt een laag van het huis. Het kan gebruikt worden om een laag sneeuw te smelten.
+.TP 
+.B h " selecteert hagel"
+Dit vernietigt twee lagen van het huis, maar het kan niet door een sneeuwlaag.
+.TP 
+.B l " selecteert bliksem"
+Splitst het huis in tweeen. Wordt niet beinvloedt door de wind.
+.TP 
+.B t " selecteert tornado"
+Niet zo effectief als bliksem, maar de tornado gaat ook recht door het huis tot de bodem.
+.TP 
+.B q " sluit het spel af"
+.TP 
+.B o " toont de topscores"
+.TP 
+.B c " toont de huidige scores"
+.SH "OPTIONS"
+U kunt het spel starten met de volgende commandoregel opties:
+.P
+.B \-\-connect IP,
+Het spel zal verbinding maken met de server op de gegeven host (IP of hostnaam).
+.P
+.B \-\-demo,
+Zelf draaiende demo mode.
+.P
+.B \-\-help,
+Korte help tekst.
+.P
+.B \-\-server,
+Start het spel in server modus en wacht op een client die verbinding maakt.
+.P
+.B \-\-version,
+Toont de het versienummer en beeindigt.
+.SH "FILES"
+/usr/local/bin/tornado
+.P
+/usr/local/man/man6/tornado.6
+.P
+/var/games/tornado.scores
+.P
+/usr/local/share/locale/de/LC_MESSAGES/tornado.mo
+.P
+/usr/local/share/locale/fr/LC_MESSAGES/tornado.mo
+.SH "NOTES"
+Als u het spel in netwerk modus draait moeten de client en de server dezelfde versie draaien. Versies voor 1.0pre4 werken helemaal niet,
+omdat die geen netwerk functionaliteit hebben. Het spel zal wel starten met verschillende versies, mar het zal waarschijnlijk later crashen, als er te veel verschillen zijn.
+.P
+De Tornado server draait op poort 3000 TCP. (gedefinieerd in main.c)
+.SH "BUGS"
+Uw eigen huis vernietigen verhoogt ook uw score. :^)
+.SH "AUTHOR"
+Oliver Feiler <kiza@kcore.de>

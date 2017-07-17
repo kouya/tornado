@@ -1,0 +1,111 @@
+.\" Tornado manpage
+.\"
+.\" This manpage is Copyright (C) 2002 Oliver Feiler
+.\"                               <kiza@claws-and-paws.com>
+.\"
+.TH TORNADO 6 "31 January 2002" Games "Tornado VERSION"
+.SH NAME
+.B tornado
+\- Klon des original C64 Spiels.
+.SH SYNOPSIS
+.B tornado [--connect IP|--demo|--help|--server|--version]
+.SH DESCRIPTION
+Das Ziel des Spiels
+.B tornado
+ist es das Haus des Gegners mit den Kräften des Regens, Schnees, Hagels,
+Blitzes und des Tornados zu zerstören.
+.P
+Nachdem das Spiel gestartet wurde geben die beiden Spieler ihre Namen ein.
+Wird ein Feld leer gelassen, so übernimmt der Computer diesen Spieler. Nach
+dem Start sind zwei Häuser mit den jeweiligen Spielernamen unter ihnen
+und eine Wolke am oberen Bildschirmrand zu sehen. Der Spieler, der am Zug is,
+hat ein Sternchen
+.I *
+neben seinem Namen.
+.P
+Aus dem Menü in der Bildschirmmitte wählt jeder Spieler sein Wetter
+Phänomen aus. Eine zweite Box erscheint wo man die Abweichung angeben
+kann. Vielleicht hast du ja den Wert
+.I Windgeschwindigkeit 
+in der Mitte des unteren Bildschirmrands bemerkt mittlerweile. Idealerweise
+würde man einen Wert von
+.I 2
+nehmen, wenn die Windgeschwindigkeit
+.I -2
+beträgt. Der Regen/Hagel/Schnee/Tornado würde dann senkrecht nach unten
+fallen von der Wolke aus. Allerdings wird zufällig ausgewählt ob der Regen
+nun mehr links oder rechts and der Wolke erscheint. Zielen ist also nicht
+immer unbedingt so einfach wie es aussieht.
+.P
+Wenn du das Haus des Gegners (oder dein eigenes) triffst wird die
+Prozentanzeige darunter reduziert abhängig davon wieviel Schaden
+angerichtet wurde. Wenn der Zähler auf
+.I 0%
+ist, verliert derjenige Spieler.
+.P
+Die Tasten, die im Spiel benutzt werden sind:
+.TP
+.B s " wählt Schnee"
+Schnee ist eine defensive Waffe. Wenn du damit ein Haus triffst, entsteht
+darauf eine Schicht, die von Hagel nicht durchdrungen werden kann. Nur Regen
+kann diese Schicht entfernen. Blitz und Tornado sind nicht davon betroffen.
+.TP
+.B r " wählt Regen"
+Zerstört eine Reihe des Hauses. Kann verwendet werden um eine Reihe Schnee
+zu schmelzen.
+.TP
+.B h " wählt Hagel"
+Dies zerstört zwei Reihen des Hauses, kann aber nicht durch eine Schneeschicht
+dringen.
+.TP
+.B l " wählt Blitz"
+Spaltet das Haus in zwei Hälften. Nicht vom Wind beeinflusst.
+.TP
+.B t " wählt Tornado"
+Nicht so effektiv wie Blitz, aber der Tornado dringt auch bis zum Boden des
+Hauses vor.
+.TP
+.B q " beendet das Spiel"
+.TP
+.B o " zeigt die Highscoreliste an"
+.TP
+.B c " zeigt den aktuellen Punktestand"
+.SH OPTIONS
+Das Spiel kann mit den folgenden Kommandozeilenoptionen gestartet werden:
+.P
+.B \-\-connect IP,
+Das Spiel connected mit dem angegebenen server (IP oder Hostname)
+.P
+.B \-\-demo,
+Selbst laufender Demo Modus.
+.P
+.B \-\-help,
+Kurzer Hilfe Bildschirm.
+.P
+.B \-\-server,
+Startet im Server Modus und wartet auf Verbindungen von clients.
+.P
+.B \-\-version,
+Zeigt die Versionsnummer an und beendet sich wieder.
+.SH FILES
+PREFIX/bin/tornado
+.P
+PREFIX/man/man6/tornado.6
+.P
+/var/games/tornado.scores
+.P
+/usr/local/share/locale/de/LC_MESSAGES/tornado.mo
+.P
+/usr/local/share/locale/fr/LC_MESSAGES/tornado.mo
+.SH NOTES
+Wenn das Spiel im Netzwerkmodus läuft sollte auf beiden Seiten die selbe
+Version laufen. Versionen vor 1.0pre4 funktionieren damit überhaupt nicht,
+weil dort die Netzwerkfunktionalität noch nicht vorhanden ist. Das Spiel
+startet mit unterschiedlichen Versionen, kann aber jederzeit abstürzen
+oder out-of-sync geraten.
+.P
+Der Tornado server läuft auf port 3000 TCP. (definiert in main.c)
+.SH BUGS
+Sein eigenes Haus zu zerstören erhöht auch die Punktezahl. :^)
+.SH AUTHOR
+Oliver Feiler <kiza@kcore.de>

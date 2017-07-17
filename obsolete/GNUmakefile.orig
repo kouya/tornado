@@ -1,0 +1,94 @@
+CC = gcc
+LDFLAGS = -lncurses
+OBJFILES = main.o draw.o erwin.o network.o scores.o
+PREFIX = /usr/local
+LOCALEPATH = /usr/local/share/locale
+CFLAGS = -Wall -O2 -DPREFIX="\"$(PREFIX)\"" -DLOCALEPATH="\"$(LOCALEPATH)\""
+VERSION = `echo VERSION | cpp -P -include version.h | tr -d '" ' | grep -v '^$$'`
+LOCALES = de
+
+###                                                       ###
+### You shouldn't need to edit anything beyond this point ###
+###                                                       ###
+
+all: tornado tornado.6 locales
+
+locales: $(addsuffix .mo,$(LOCALES))
+
+%.mo: %.po
+	msgfmt $< -o $@
+
+tornado.6: tornado.6.in
+	cat tornado.6.in | sed s#PREFIX#$(PREFIX)# | \
+	sed s/VERSION/$(VERSION)/ > tornado.6
+
+tornado: $(OBJFILES)
+	$(CC) $(LDFLAGS) $(OBJFILES) -o tornado
+
+debug:
+	gcc -g -ggdb -Wall -ansi -pedantic -o tornado draw.c main.c erwin.c network.c scores.c -lncurses -DPREFIX="\"$(PREFIX)\"" -DLOCALEPATH="\"$(LOCALEPATH)\"" 
+
+tornado-static: tornado.6
+	gcc -s -O2 -Wall -static -o tornado draw.c main.c erwin.c network.c scores.c -lncurses -DPREFIX="\"$(PREFIX)\"" -DLOCALEPATH="\"$(LOCALEPATH)\""
+
+new: clean tornado tornado.6
+
+clean:
+	rm -f tornado *.o tornado.6 *.mo
+
+install: tornado tornado.6 $(addprefix install-locale-, $(LOCALES))
+	if [ ! -d "$(PREFIX)/bin" ]; then \
+	  mkdir -p $(PREFIX)/bin; \
+	fi
+	install -s tornado $(PREFIX)/bin
+	if [ ! -d "$(PREFIX)/man/man6" ]; then \
+	  mkdir -p $(PREFIX)/man/man6; \
+	fi
+	install -m 0644 tornado.6 $(PREFIX)/man/man6
+
+	if [ -f "/var/games/tornado.scores" ]; then \
+	  echo "Skipping install of the highscores file. File exists."; \
+	  cat /var/games/tornado.scores | ./convert-highscorefile > score.tmp; \
+	  mv -f score.tmp /var/games/tornado.scores; \
+	  chmod a+rw-x "/var/games/tornado.scores"; \
+	else \
+	  if [ ! -d "/var/games" ]; then \
+	    mkdir /var/games; \
+	  fi; \
+	  install tornado.scores /var/games; \
+	  chmod a+w-x "/var/games/tornado.scores"; \
+	fi
+
+install-locale-%: %.mo
+	install -m 0644 $< $(LOCALEPATH)/$(basename $<)/LC_MESSAGES/tornado.mo
+
+uninstall:
+	rm -f $(PREFIX)/bin/tornado
+	rm -f $(PREFIX)/man/man6/tornado.6
+	rm -f /var/games/tornado.scores
+
+tornado-no-locales: tornado tornado.6
+
+tornado-no-locales-install: tornado tornado.6
+	if [ ! -d "$(PREFIX)/bin" ]; then \
+	  mkdir -p $(PREFIX)/bin; \
+	fi
+	install -s tornado $(PREFIX)/bin
+	if [ ! -d "$(PREFIX)/man/man6" ]; then \
+	  mkdir -p $(PREFIX)/man/man6; \
+	fi
+	install -m 0644 tornado.6 $(PREFIX)/man/man6
+
+	if [ -f "/var/games/tornado.scores" ]; then \
+	  echo "Skipping install of the highscores file. File exists."; \
+	  cat /var/games/tornado.scores | ./convert-highscorefile > score.tmp; \
+	  mv -f score.tmp /var/games/tornado.scores; \
+	  chmod a+rw-x "/var/games/tornado.scores"; \
+	else \
+	  if [ ! -d "/var/games" ]; then \
+	    mkdir /var/games; \
+	  fi; \
+	  install tornado.scores /var/games; \
+	  chmod a+w-x "/var/games/tornado.scores"; \
+	fi
+

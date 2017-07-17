@@ -1,0 +1,253 @@
+# German Translation Tornado.
+# Copyright (C) 2000-2002 Oliver Feiler
+# Oliver Feiler <kiza@claws-and-paws.com>, 2000-2002.
+#
+#: draw.c:744 main.c:371 main.c:377 main.c:382 main.c:384 main.c:540
+#: main.c:545
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tornado 0.1.4\n"
+"POT-Creation-Date: 2001-11-11 14:24+0100\n"
+"PO-Revision-Date: 2001-11-11 17:24+0100\n"
+"Last-Translator: Oliver Feiler <kiza@claws-and-paws.com>\n"
+"Language-Team: DE <kiza@claws-and-paws.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#: draw.c:92
+msgid "|      *** CLOUD ***        |"
+msgstr "|     *** WOLKE ***         |"
+
+#: draw.c:576
+msgid "|  s = Snow               r = Rain  |"
+msgstr "|  s = Schnee            r = Regen  |"
+
+#: draw.c:577
+msgid "|  h = Hail          l = Lightning  |"
+msgstr "|  h = Hagel             l = Blitz  |"
+
+#: draw.c:578
+msgid "|  t = Tornado  c = Current Scores  |"
+msgstr "|  t = Tornado c = Aktuelle Punkte  |"
+
+#: draw.c:579
+msgid "|  q = Quit         o = Highscores  |"
+msgstr "|  q = Beenden       o = Highscore  |"
+
+#: draw.c:683
+#, c-format
+msgid "|          Player %d wins!           |"
+msgstr "|        Spieler %d gewinnt!         |"
+
+#: draw.c:684
+#, c-format
+msgid "|         Your score is %6d.     |"
+msgstr "|        Ihre Punktzahl: %6d     |"
+
+#: draw.c:689
+msgid "|    Do you want to play again?     |"
+msgstr "|        Noch ein Spiel?            |"
+
+#: draw.c:690
+msgid "|              (y/n)                |"
+msgstr ""
+
+#: draw.c:699 main.c:383 main.c:385 main.c:387 main.c:388 main.c:496
+#: main.c:497
+msgid "Computer"
+msgstr ""
+
+#: draw.c:701
+#, c-format
+msgid "Your score is %6d"
+msgstr "Ihre Punktzahl: %6d"
+
+#: draw.c:703
+msgid "Submit highscore to website?"
+msgstr "Highscore an Webseite schicken?"
+
+#: draw.c:704
+msgid "Needs an internet connection."
+msgstr "Benötigt Internetverbindung."
+
+#: draw.c:705
+msgid "(y/n)"
+msgstr ""
+
+#: draw.c:744
+msgid "Error reading scorefile:"
+msgstr "Fehler beim Lesen der Scoredatei:"
+
+#: draw.c:744
+msgid "File format error"
+msgstr "Dateiformatfehler"
+
+#: draw.c:751
+msgid "|             Highscores            |"
+msgstr "|           Punktetabelle           |"
+
+#: main.c:65
+msgid "Please enter your name Player 1"
+msgstr "Bitte Namen eingeben, Spieler 1"
+
+#: main.c:66
+msgid "Please enter your name Player 2"
+msgstr "Bitte Namen eingeben, Spieler 2"
+
+#: main.c:96
+msgid "Someone quit the game.\n"
+msgstr "Jemand hat das Spiel beendet. \n"
+
+#: main.c:97
+msgid "Thanks for playing Tornado!\n"
+msgstr "Danke, dass Sie Tornado gespielt haben!\n"
+
+#: main.c:116 main.c:140
+msgid "Error reading from network: "
+msgstr "Fehler beim Lesen vom Netzwerk: "
+
+#: main.c:128 main.c:152 main.c:164
+msgid "Error writing to network: "
+msgstr "Fehler beim Schreiben aufs Netzwerk: "
+
+#: main.c:176
+msgid "Error reading network: "
+msgstr "Fehler beim Lesen vom Netzwerk: "
+
+#: main.c:277
+#, c-format
+msgid "Waiting for connection on port %d...\n"
+msgstr "Warte auf Verbindung auf Port %d...\n"
+
+#: main.c:279
+msgid "Could not initialize Network"
+msgstr "Konnte Netzerk nicht initialisieren"
+
+#: main.c:280 main.c:310 main.c:314
+msgid "Exiting.\n"
+msgstr "Abbruch.\n"
+
+#: main.c:283
+#, c-format
+msgid ""
+"Client from %s connected at port %d.\n"
+"\n"
+msgstr "Client von %s verbunden auf Port %d.\n"
+"\n"
+
+#: main.c:288
+#, c-format
+msgid ""
+"Program versions mismatch! You are running version %s, client is %s.\n"
+"You can play, but the game will get out of sync and probably crash.\n"
+"\n"
+msgstr "Programmversionen stimmen nicht überein! Ihre Version: %s, Client: %s.\n"
+"Sie können spielen, aber das Programm wird unsynchron werden und abstürzen.\n"
+"\n"
+
+#: main.c:303
+msgid "No hostname specified. Exiting...\n"
+msgstr "Kein Hostname angegeben. Abbruch...\n"
+
+#: main.c:306
+#, c-format
+msgid "Connecting to server %s on port %d...\n"
+msgstr "Verbindung zu Server %s, Port %d wird aufgebaut...\n"
+
+#: main.c:309
+msgid "Could not connect to server"
+msgstr "Konnte Server nicht erreichen"
+
+#: main.c:313
+msgid "Could not connect to server: hostname lookup failure\n"
+msgstr "Konnte Server nicht erreichen: hostname unbekannt\n"
+
+#: main.c:317
+#, c-format
+msgid ""
+"Connection to server %s established.\n"
+"\n"
+msgstr "Verbindung mit Server %s aufgebaut.\n"
+"\n"
+
+#: main.c:321
+#, c-format
+msgid ""
+"Program versions mismatch! Your are running version %s, server is %s.\n"
+"You can play, but the game will get out of sync and probably crash.\n"
+"\n"
+msgstr "Programmversionen stimmen nicht überein! Ihre Version: %s, Server: %s.\n"
+"Sie können spielen, aber das Programm wird unsynchron werden und abstürzen.\n"
+"\n"
+
+#: main.c:330
+#, c-format
+msgid "Tornado version %s\n"
+msgstr "Tornado Version %s\n"
+
+#: main.c:340
+#, c-format
+msgid ""
+"Tornado %s\n"
+"\n"
+msgstr ""
+
+#: main.c:341
+msgid ""
+"usage: [--connect IP|--demo|--help|--server]\n"
+"\n"
+msgstr "Verwendung: [--connect IP|--demo|--help|--server]\n"
+"\n"
+
+#: main.c:342
+msgid "\t--connect [IP]\tConnect to IP/host for network play.\n"
+msgstr "\t--connect [IP]\tVerbindung mit IP/host aufbauen.\n"
+
+#: main.c:343
+msgid "\t--demo\t\tRun in demo mode.\n"
+msgstr "\t--demo\t\tDemomodus.\n"
+
+#: main.c:345
+msgid "\t--help\t\tPrint this help message.\n"
+msgstr "\t--help\t\tDiese Hilfe anzeigen.\n"
+
+#: main.c:348
+msgid "\t--server\tRun as server so others can connect.\n"
+msgstr "\t--server\tProgramm als Server starten.\n"
+
+#: main.c:349
+msgid "\t--version\tPrint version number and exit.\n"
+msgstr "\t--version\tVersion anzeigen und beenden.\n"
+
+#: main.c:369 main.c:375
+msgid "Please enter your name"
+msgstr "Bitte geben Sie Ihren Namen ein"
+
+#: main.c:371 main.c:377 main.c:540 main.c:545
+msgid "Waiting for other player..."
+msgstr "Warte auf anderen Spieler..."
+
+#: main.c:460
+msgid "%c%-23s  %3.0f%% | Windspeed: %2d | %3.0f%%   %23s%c"
+msgstr "%c%-23s  %3.0f%% | Wind:      %2d | %3.0f%%   %23s%c"
+
+#: main.c:571 main.c:572
+#, c-format
+msgid "%d points"
+msgstr "%d Punkte"
+
+#: main.c:589 main.c:613 main.c:632 main.c:658
+msgid "Aim?"
+msgstr "Ziel?"
+
+#: main.c:104 main.c:106
+#, c-format
+msgid "%s quit the game.\n"
+msgstr "%s hat das Spiel beendet.\n"
+
+#: main.c:108
+msgid "You quit the game.\n"
+msgstr "Du hast das Spiel beendet.\n"

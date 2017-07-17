@@ -1,0 +1,109 @@
+.\" Tornado manpage
+.\"
+.\" This manpage is Copyright (C) 2000 Oliver Feiler
+.\"                               <kiza@gmx.net>
+.\"
+.TH TORNADO 6 "31 January 2002" Games "Tornado VERSION"
+.SH NAME
+.B tornado
+\- clone of the original C64 game.
+.SH SYNOPSIS
+.B tornado [--connect IP|--demo|--help|--server|--version]
+.SH DESCRIPTION
+The object of the game
+.B tornado
+is to destroy your opponents house with the powers of rain, snow, hail,
+lightning and the tornado. 
+.P
+After the game is started the two player enter their names. If you leave the
+field blank the computer will take the player's part. You can see
+two houses with each player name in the corner below it and a cloud on
+top of the screen, the sky. The player whose turn it is has an asterisk
+.I *
+next to his name.
+.P
+From the menu in the center of the screen each
+player now picks a weather phenomenon. A second box will appear where
+you can enter the aim you would like to use. You may have noticed the
+value
+.I Windspeed
+in the mid bottom of the screen by now. Ideally
+you would take aim
+.I 2
+if windspeed is
+.I -2
+for example and then
+your rain/hail/snow/tornado would go straight down the cloud. However,
+it's chosen randomly if the rain appears on the left side of the cloud
+or the right side, so aiming might be not that easy as it looks like.
+.P
+If you hit your opponent's house (or your own) the percentage
+counter will decrease depending on how much damage you did. If the
+counter is down to
+.I 0%
+the player loses the game.
+.P
+The keys you can use in the game are:
+.TP
+.B s " selects snow"
+Snow is a defensive weapon. If you hit a house with snow it creates a coating
+that hail cannot destroy. Only rain can be used to destroy that layer of snow.
+Lightning and tornado are not effected.
+.TP
+.B r " selects rain"
+Destroys one row of the house. Can be used to melt a row of snow.
+.TP
+.B h " selects hail"
+This will destroy two rows of the house, but cannot destroy a snow coating.
+.TP
+.B l " selects lightning"
+Splits the house into two pieces. Not influenced by wind.
+.TP
+.B t " selects tornado"
+Not as effective as lightning but the tornado goes straight to the bottom
+of the house as well.
+.TP
+.B q " quits the game"
+.TP
+.B o " show the highscores"
+.TP
+.B c " show current player scores"
+.SH OPTIONS
+You can start the game with the following command line options:
+.P
+.B \-\-connect IP,
+The game will connect to the server with the given host (IP or hostname).
+.P
+.B \-\-demo,
+Self running demo mode.
+.P
+.B \-\-help,
+Short help screen.
+.P
+.B \-\-server,
+Starts the game in server mode and waits for a connecting client.
+.P
+.B \-\-version,
+Shows the program version and exits.
+.SH FILES
+PREFIX/bin/tornado
+.P
+PREFIX/man/man6/tornado.6
+.P
+/var/games/tornado.scores
+.P
+/usr/local/share/locale/de/LC_MESSAGES/tornado.mo
+.P
+/usr/local/share/locale/fr/LC_MESSAGES/tornado.mo
+.SH NOTES
+When you run the game in network mode you should have the same game versions
+on client and server side. Versions prior 1.0pre4 won't work at all due to
+the lack of network capability. The game will start with different versions,
+but it will probably crash at any time, if there are too many differences
+in the two versions.
+.P
+The Tornado game server runs on port 3000 TCP. (defined in main.c)
+.SH BUGS
+Destroying your own house will increase your score as well. :^)
+.SH AUTHOR
+Oliver Feiler <kiza@kcore.de>

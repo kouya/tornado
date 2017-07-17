@@ -1,0 +1,91 @@
+.\" Tornado manpage
+.\"
+.\" This manpage is Copyright (C) 2000 Oliver Feiler
+.\"                               <kiza@gmx.net>
+.\"
+.\" Per la traduzione italiana Germano Rizzo
+.\"                          <mano@pluto.linux.it>
+.TH TORNADO 6 "31 January 2002" Games "Tornado VERSION"
+.SH NAME
+.B tornado
+\- clone dell'originale gioco per C64.
+.SH SYNOPSIS
+.B tornado [--connect IP|--demo|--help|--server|--version]
+.SH DESCRIPTION
+Lo scopo di
+.B tornado
+é di distruggere la casa del vostro avversario con il potere di pioggia, neve, grandine, fulmine e, naturalmente, del tornado.
+.P
+Dopo l'avvio del gioco i due giocatori immettono i loro nomi; se si lascia il campo vuoto, il computer impersonerà il giocatore. Si possono vedere due case con il nome di ciascun giocatore nell'angolo sotto di esse, ed una nuvola alla sommità dello schermo, nel cielo. Il giocatore di cui é il turno ha un asterisco
+.I *
+vicino al nome.
+.P
+Sceglierete ora un fenomeno metereologico dal menu che compare al centro dello schermo. Un secondo riquadro apparirà, per immettere il puntamento che desiderate usare. Forse avete notato il valore
+.I Windspeed
+(velocità del vento), ai piedi dello schermo. Idealmente , ad esempio, punterete a
+.I 2
+se la velocità del vento é
+.I -2
+per far andare la vostra pioggia/neve/grandine/tornado verticalmente giù dalla nuvola. Comunque, il fenomeno apparirà casualmente alla destra o alla sinistra della nuvola, perciò puntare non é facile come potrebbe sembrare.
+.P
+Se colpite la casa del vostro avversario (o la vostra) la percentuale di danno sarà decrementata, a seconda di quanto danno le fate. Se il contatore si riduce a
+.I 0%
+il giocatore perde.
+.P
+I tasti che potete usare nel gioco sono:
+.TP
+.B s " seleziona la neve"
+La neve è un'arma difensiva. Se colpite una casa con della neve, si crea un rivestimento che la grandine non può distruggere. Solo la pioggia può essere usata per distruggere uno strato di neve. Il fulmine e il tornado non sono influenzati da essa.
+.TP
+.B r " seleziona la pioggia"
+Distrugge una riga della casa. Può essere usata per sciogliere la neve.
+.TP
+.B h " seleziona la grandine"
+Questo distruggerà due righe della casa, ma non un rivestimento di neve.
+.TP
+.B l " seleziona il fulmine"
+Spacca la casa in due pezzi. Non influenzato dal vento.
+.TP
+.B t " selects tornado"
+Non è tanto efficace quanto il fulmine ma arriva anch'esso fino al fondo della casa.
+.TP
+.B q " abbandona il gioco"
+.TP
+.B o " mostra i punteggi più alti"
+.TP
+.B c " mostra il punteggio dei giocatori correnti"
+.SH OPZIONI
+Potete avviare il gioco con le seguenti opzioni di linea di comando:
+.P
+.B \-\-connect IP,
+Il gioco si connetterà al server con l'host dato (IP o hostname).
+.P
+.B \-\-demo,
+Modalità demo, gioca da solo.
+.P
+.B \-\-help,
+Breve schermata di aiuto.
+.P
+.B \-\-server,
+Avvia il gioco in modo server e attende che un client si connetta.
+.P
+.B \-\-version,
+Mostra la versione del programma ed esce.
+.SH FILE
+PREFIX/bin/tornado
+.P
+PREFIX/man/man6/tornado.6
+.P
+/var/games/tornado.scores
+.P
+/usr/local/share/locale/de/LC_MESSAGES/tornado.mo
+.P
+/usr/local/share/locale/fr/LC_MESSAGES/tornado.mo
+.SH NOTE
+Avviando il gioco in modalità network, dovreste avere la stessa versione del gioco dal lato server e client. Le versioni precedenti alla 1.0pre4 non funzioneranno per nulla, a causa della mancanza delle funzionalità di rete. Con versioni diverse ai due lati, il gioco si avvierà ugualmente, ma potrebbe andare in crash ad ogni momento, se c'é troppa differenza tra le due versioni.
+.P
+Il game server di Tornado si avvia sulla porta TCP 3000. (definito in main.c)
+.SH BUG
+Anche la distruzione della propria casa aumenta il proprio punteggio. :^)
+.SH AUTORI
+Oliver Feiler <kiza@kcore.de>

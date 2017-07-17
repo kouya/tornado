@@ -1,0 +1,89 @@
+.\" Tornado manpage
+.\"
+.\" This manpage is Copyright (C) 2000 Pascal Varet
+.\"                               <sundance@ierne.eu.org>
+.\"
+.TH TORNADO 6 "31 January 2002" Games "Tornado VERSION"
+.SH NOM
+.B tornado
+\- clone du jeu original sur C64.
+.SH SYNOPSIS
+.B tornado [--connect IP|--demo|--help|--server|--version]
+.SH DESCRIPTION
+Le but du jeu
+.B Tornado
+est de détruire la maison de votre adversaire par le pouvoir de la pluie, de la neige, de la grêle, de l'éclair et de la tornade.
+.P
+Quand le jeu est lancé, les deux joueurs entrent leur nom. Si vous laissez ce champ vide, l'ordinateur prendra la place de ce joueur. Les deux maisons sont de chaque côté de l'écran, avec le nom de chaque joueur dans le coin inférieur et un nuage en haut de l'écran, qui figure le ciel. Le joueur dont c'est le tour est indiqué par un astérisque
+.I *
+à côté de son nom.
+.P
+Dans le menu au centre de l'écran, le joueur dont c'est le tour choisit un phénomène météorologique. Une seconde boîte de dialogue va alors apparaître, où vous pouvez entrer la visée à utiliser. Il y a une valeur indiquant la puissance du
+.I Vent
+en bas de l'écran. Vous devez en tenir compte pour viser. Par exemple, si vous réglez la visée à
+.I 2
+et que le vent est à
+.I -2
+alors votre pluie/neige/grêle/tornade va tomber complètement à la verticale. Toutefois, le rideau de pluie est moins large que le nuage, et sa position relative par rapport au nuage (plutôt à gauche ou plutôt à droite) est choisie aléatoirement. Viser n'est donc pas aussi simple qu'il y paraît.
+.P
+Si vous touchez la maison de votre adversaire (ou bien la votre), le compteur de pourcentage adjacent, qui indique l'état de la maison concernée, va diminuer en fonction des dommages causés. Le joueur dont le compteur tombe à
+.I 0%
+le premier perd la partie.
+.P
+Les touches utilisables en cours de jeu sont :
+.TP
+.B s " sélectionne la neige"
+La neige est une arme de défense. Une maison touchée par la neige se couvre d'une couche que la grêle ne peut pénétrer. Seule la pluie peut détruire cette couche protectrice. Les éclairs et les tornades ne sont pas affectés par la neige.
+.TP
+.B r " sélectionne la pluie"
+La pluie détruit une rangée de briques de la maison, et peut être utilisée pour faire fondre une couche de neige.
+.TP
+.B h " sélectionne la grêle"
+La grêle détruit deux rangées de briques, mais est arrétée par une couche de neige.
+.TP
+.B l " sélectionne l'éclair"
+Coupe la maison en deux. L'éclair n'est pas influencé par le vent ni la neige.
+.TP
+.B t " sélectionne la tornade"
+Pas aussi efficace que l'éclair, la tornade atteint néanmoins aussi une maison jusque dans ses fondations.
+.TP
+.B q " quitte le jeu"
+.TP
+.B o " montre les meilleurs scores"
+.TP
+.B c " montre les scores en cours"
+.SH OPTIONS
+Vous pouvez démarrer le jeu avec une des options de ligne de commande suivantes :
+.P
+.B \-\-connect IP,
+Indique au jeu de se connecter à l'hôte indiqué (IP numérique ou nom d'hôte).
+.P
+.B \-\-demo,
+Mode démo.
+.P
+.B \-\-help,
+Bref écran d'aide.
+.P
+.B \-\-server,
+Lance le jeu en mode serveur et attend la connexion d'un client.
+.P
+.B \-\-version,
+Affiche le numéro de version du programme puis quitte.
+.SH FICHIERS
+PREFIX/bin/tornado
+.P
+PREFIX/man/man6/tornado.6
+.P
+/var/games/tornado.scores
+.P
+/usr/local/share/locale/de/LC_MESSAGES/tornado.mo
+.P
+/usr/local/share/locale/fr/LC_MESSAGES/tornado.mo
+.SH NOTES
+Pour jouer en mode réseau, le client et le serveur doivent avoir le même numéro de version. Les versions antérieures à la 1.0pre4 ne sont pas prévues pour jouer en réseau. Le jeu en réseau entre deux versions différentes du programme acceptera de démarrer, mais sera susceptible de crasher à tout moment.
+.P
+Tornado en mode serveur utilise le port TCP 3000. (Ceci est défini dans main.c)
+.SH BUGS
+Endommager votre propre maison augmente aussi votre score. :^)
+.SH AUTHOR
+Oliver Feiler <kiza@kcore.de>

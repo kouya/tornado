@@ -1,0 +1,44 @@
+#!/usr/bin/perl -w
+#
+# This quick and dirty script converts the old highscore file format to
+# the new one.
+
+# skip the first two lines
+$_ = <>;
+$_ = <>;
+
+if ($_ eq "# Version: 2\n") {
+    print STDERR "Notice: Highscore file already in new format - not modified.\n";
+    print <<EOF;
+# Tornado highscores file - do not edit! Editing voids the file's warranty! ;-)
+# Version: 2
+EOF
+
+    while (<>) {
+	print;
+    }
+    exit 0;
+}
+
+print STDERR "Notice: Converting highscore file to version 2.\n";
+# print the header
+print <<EOF;
+# Tornado highscores file - do not edit! Editing voids the file's warranty! ;-)
+# Version: 2
+EOF
+
+while (<>) {
+    chomp;
+    if (m/(.*?)( +)([0-9]+)/) {
+	$name = $1;
+	$score = $3;
+
+	$name =~ tr/ / /s;
+	if (length($name) > 21) {
+	    print STDERR "Warning: Player name too long, truncated.\n";
+	    $name = substr($name,0,21);
+	}
+	
+	print "$name\t$score\n";
+    }
+}

@@ -1,0 +1,462 @@
+# Russian Translation Tornado.
+# Copyright (C) 2002 Ivan Savochenko
+# Ivan Savochenko <ivane@pisem.net>, 2002.
+# 
+#: draw.c:744 main.c:371 main.c:377 main.c:382 main.c:384 main.c:540
+#: main.c:545
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tornado 0.1.4\n"
+"POT-Creation-Date: 2001-11-11 14:24+0100\n"
+"PO-Revision-Date: 2002-11-15 01:13+0300\n"
+"Last-Translator: Ivan Savochenko <ivane@pisem.net>\n"
+"Language-Team: RU <ivane@pisem.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: draw.c:68
+msgid "___"
+msgstr ""
+
+#: draw.c:69
+msgid "|||"
+msgstr ""
+
+#: draw.c:70
+msgid "/-------'|`-\\"
+msgstr ""
+
+#: draw.c:71
+msgid "/'/////////////`\\"
+msgstr ""
+
+#: draw.c:72
+msgid "|---------------|"
+msgstr ""
+
+#: draw.c:73
+msgid "|-,_____,--,__,-|"
+msgstr ""
+
+#: draw.c:74
+msgid "|-|__|__|--|++|-|"
+msgstr ""
+
+#: draw.c:75
+msgid "|-|__|__|--|o+|-|"
+msgstr ""
+
+#: draw.c:76
+msgid "|----------|++|-|"
+msgstr ""
+
+#: draw.c:77
+msgid "|__________|__|_|"
+msgstr ""
+
+#: draw.c:91 draw.c:93
+msgid "|                           |"
+msgstr ""
+
+#: draw.c:92
+msgid "|      *** CLOUD ***        |"
+msgstr "|      *** ОБЛАКО ***       |"
+
+#: draw.c:94
+msgid "+---------------------------+"
+msgstr ""
+
+#: draw.c:99
+msgid ",/+++*++***+****++++++***+\\, "
+msgstr ""
+
+#: draw.c:100
+msgid "(*+++*****+++++***+++****++) "
+msgstr ""
+
+#: draw.c:101
+msgid "`\\++******+*++*++*****+++*/' "
+msgstr ""
+
+#: draw.c:102
+msgid " `╟*,.,*╟'`╟*,.,*╟`╟*,.,*╟'  "
+msgstr ""
+
+#: draw.c:164 draw.c:174 draw.c:214 draw.c:295 draw.c:305 draw.c:316
+#: draw.c:346
+#, c-format
+msgid "%c"
+msgstr ""
+
+#: draw.c:389 draw.c:390 draw.c:394 draw.c:398 draw.c:404
+msgid "||"
+msgstr ""
+
+#: draw.c:391 draw.c:393 draw.c:397 draw.c:402 draw.c:403 draw.c:406
+#: draw.c:407
+msgid "//"
+msgstr ""
+
+#: draw.c:392 draw.c:396 draw.c:401 draw.c:405
+msgid "//\\\\"
+msgstr ""
+
+#: draw.c:393 draw.c:394 draw.c:395 draw.c:397 draw.c:402 draw.c:403
+#: draw.c:406 draw.c:408 draw.c:409 draw.c:410
+msgid "\\\\"
+msgstr ""
+
+#: draw.c:415 draw.c:416 draw.c:417 draw.c:419 draw.c:420 draw.c:421
+#: draw.c:423 draw.c:424 draw.c:426 draw.c:427 draw.c:428 draw.c:430
+#: draw.c:431 draw.c:432 draw.c:433 draw.c:434
+msgid "  "
+msgstr ""
+
+#: draw.c:418 draw.c:422 draw.c:425 draw.c:429
+msgid "    "
+msgstr ""
+
+#: draw.c:480
+msgid "#"
+msgstr ""
+
+#: draw.c:513 draw.c:558 draw.c:559 draw.c:560 draw.c:561
+msgid " "
+msgstr ""
+
+#: draw.c:543 draw.c:544 draw.c:545
+msgid "+"
+msgstr ""
+
+#: draw.c:543 draw.c:544 draw.c:545
+msgid "*"
+msgstr ""
+
+#: draw.c:573 draw.c:605 draw.c:637 draw.c:686 draw.c:750 draw.c:782
+msgid ",___________________________________,"
+msgstr ""
+
+#: draw.c:574 draw.c:606 draw.c:607 draw.c:608 draw.c:609 draw.c:638
+#: draw.c:639 draw.c:640 draw.c:641 draw.c:783 draw.c:784 draw.c:785
+#: draw.c:786
+msgid "|                                   |"
+msgstr ""
+
+#: draw.c:575
+msgid "           Tornado "
+msgstr "           Торнадо "
+
+#: draw.c:576
+msgid "|  s = Snow               r = Rain  |"
+msgstr "|  s = Снег              r = Дождь  |"
+
+#: draw.c:577
+msgid "|  h = Hail          l = Lightning  |"
+msgstr "|  h = Град             l = Молния  |"
+
+#: draw.c:578
+msgid "|  t = Tornado  c = Current Scores  |"
+msgstr "|  t = Торнадо    c = Текущий счёт  |"
+
+#: draw.c:579
+msgid "|  q = Quit         o = Highscores  |"
+msgstr "|  q = Выход     o = Галерея славы  |"
+
+#: draw.c:580 draw.c:610 draw.c:642 draw.c:691 draw.c:761 draw.c:787
+msgid "+-----------------------------------+"
+msgstr ""
+
+#: draw.c:584 draw.c:585 draw.c:586 draw.c:587 draw.c:588 draw.c:589
+#: draw.c:590 draw.c:621 draw.c:622 draw.c:623 draw.c:624 draw.c:625
+#: draw.c:626 draw.c:656 draw.c:657 draw.c:658 draw.c:659 draw.c:660
+#: draw.c:661 draw.c:720 draw.c:769 draw.c:802 draw.c:803 draw.c:804
+#: draw.c:805 draw.c:806 draw.c:807
+msgid "                                     "
+msgstr ""
+
+#: draw.c:683
+#, c-format
+msgid "|          Player %d wins!           |"
+msgstr "|           Победил(а) %d!           |"
+
+#: draw.c:684
+#, c-format
+msgid "|         Your score is %6d.     |"
+msgstr "|          Вы набрали: %6d.      |"
+
+#: draw.c:689
+msgid "|    Do you want to play again?     |"
+msgstr "|          Поиграем ещё?            |"
+
+#: draw.c:690
+msgid "|              (y/n)                |"
+msgstr ""
+
+#: draw.c:699 main.c:383 main.c:385 main.c:387 main.c:388 main.c:496
+#: main.c:497
+msgid "Computer"
+msgstr "Компьютер"
+
+#: draw.c:701
+#, c-format
+msgid "Your score is %6d"
+msgstr "Вы набрали: %6d"
+
+#: draw.c:703
+msgid "Submit highscore to website?"
+msgstr "Опубликовать счёт на www-сайте?"
+
+#: draw.c:704
+msgid "Needs an internet connection."
+msgstr "Требуется интернет-соединение."
+
+#: draw.c:705
+msgid "(y/n)"
+msgstr ""
+
+#: draw.c:709
+#, c-format
+msgid ""
+"wget -q -O - 'http://spot.local/~kiza/linux/tornado/score?score=%d&name=%s'"
+msgstr ""
+
+#: draw.c:744
+msgid "Error reading scorefile:"
+msgstr "Ошибка чтения файла значений:"
+
+#: draw.c:744
+msgid "File format error"
+msgstr "Неверный формат данных"
+
+#: draw.c:751
+msgid "|             Highscores            |"
+msgstr "|           Галерея славы           |"
+
+#: draw.c:755
+#, c-format
+msgid "| %2d  %21s  %6d |"
+msgstr ""
+
+#: main.c:65
+msgid "Please enter your name Player 1"
+msgstr "Игрок 1, введите ваше имя"
+
+#: main.c:66
+msgid "Please enter your name Player 2"
+msgstr "Игрок 2, введите ваше имя"
+
+#: main.c:96
+msgid "Someone quit the game.\n"
+msgstr "Кое-кто покинул игру.\n"
+
+#: main.c:97
+msgid "Thanks for playing Tornado!\n"
+msgstr "Спасибо за игру!\n"
+
+#: main.c:116 main.c:140
+msgid "Error reading from network: "
+msgstr "Ошибка чтения из сети: "
+
+#: main.c:128 main.c:152 main.c:164
+msgid "Error writing to network: "
+msgstr "Ошибка записи в сеть: "
+
+#: main.c:176
+msgid "Error reading network: "
+msgstr "Ошибка чтения сети: "
+
+#: main.c:213 main.c:336
+msgid "--demo"
+msgstr ""
+
+#: main.c:275 main.c:337
+msgid "--server"
+msgstr ""
+
+#: main.c:277
+#, c-format
+msgid "Waiting for connection on port %d...\n"
+msgstr "Ожидаем соединения с портом %d...\n"
+
+#: main.c:279
+msgid "Could not initialize Network"
+msgstr "Не могу инициализировать сеть"
+
+#: main.c:280 main.c:310 main.c:314
+msgid "Exiting.\n"
+msgstr "Выход.\n"
+
+#: main.c:283
+#, c-format
+msgid ""
+"Client from %s connected at port %d.\n"
+"\n"
+msgstr ""
+"Оппонент с %s подключился к порту %d.\n"
+"\n"
+
+#: main.c:288
+#, c-format
+msgid ""
+"Program versions mismatch! You are running version %s, client is %s.\n"
+"You can play, but the game will get out of sync and probably crash.\n"
+"\n"
+msgstr ""
+"Конфликт версий программы! Вы запустили версию: %s, у клиента: %s.\n"
+"Возможно нарушение синхронизации и нестабильное выполнение программы.\n"
+"\n"
+
+#: main.c:299 main.c:335
+msgid "--connect"
+msgstr ""
+
+#: main.c:303
+msgid "No hostname specified. Exiting...\n"
+msgstr "Не указано имя хоста. Выход...\n"
+
+#: main.c:306
+#, c-format
+msgid "Connecting to server %s on port %d...\n"
+msgstr "Соединение с сервером %s, к порту %d...\n"
+
+#: main.c:309
+msgid "Could not connect to server"
+msgstr "Не могу подключиться к серверу"
+
+#: main.c:313
+msgid "Could not connect to server: hostname lookup failure\n"
+msgstr "Не могу подключиться к серверу: не найден хост\n"
+
+#: main.c:317
+#, c-format
+msgid ""
+"Connection to server %s established.\n"
+"\n"
+msgstr ""
+"Соединение с сервером %s установлено.\n"
+"\n"
+
+#: main.c:321
+#, c-format
+msgid ""
+"Program versions mismatch! Your are running version %s, server is %s.\n"
+"You can play, but the game will get out of sync and probably crash.\n"
+"\n"
+msgstr ""
+"Конфликт версий программы! Вы запустили версию: %s, у сервера: %s.\n"
+"Возможно нарушение синхронизации и нестабильное выполнение программы.\n"
+"\n"
+
+
+#: main.c:329 main.c:338
+msgid "--version"
+msgstr ""
+
+#: main.c:330
+#, c-format
+msgid "Tornado version %s\n"
+msgstr "Торнадо. Версия %s\n"
+
+#: main.c:335
+msgid "--help"
+msgstr ""
+
+#: main.c:339
+msgid "--get-players"
+msgstr ""
+
+#: main.c:340
+#, c-format
+msgid ""
+"Tornado %s\n"
+"\n"
+msgstr ""
+"Торнадо %s\n"
+"\n"
+
+#: main.c:341
+msgid ""
+"usage: [--connect IP|--demo|--help|--server]\n"
+"\n"
+msgstr "Вызов: [--connect IP|--demo|--help|--server]\n"
+"\n"
+
+#: main.c:342
+msgid "\t--connect [IP]\tConnect to IP/host for network play.\n"
+msgstr "\t--connect [IP]\tПодключиться к IP/хосту для сетевой игры.\n"
+
+#: main.c:343
+msgid "\t--demo\t\tRun in demo mode.\n"
+msgstr "\t--demo\t\tДемонстрация.\n"
+
+#: main.c:345
+msgid "\t--help\t\tPrint this help message.\n"
+msgstr "\t--help\t\tВывод этого сообщения.\n"
+
+#: main.c:348
+msgid "\t--server\tRun as server so others can connect.\n"
+msgstr "\t--server\tЗапуск в режиме сервера и ожидание подключений.\n"
+
+#: main.c:349
+msgid "\t--version\tPrint version number and exit.\n"
+msgstr "\t--version\tПоказать версию и выйти.\n"
+
+#: main.c:369 main.c:375
+msgid "Please enter your name"
+msgstr "Пожалуйста, введите ваше имя"
+
+#: main.c:371 main.c:377 main.c:540 main.c:545
+msgid "Waiting for other player..."
+msgstr "Ждём ответа противника..."
+
+#: main.c:451 main.c:480 scores.c:84
+#, c-format
+msgid "%d"
+msgstr ""
+
+#: main.c:460
+msgid "%c%-23s  %3.0f%% | Windspeed: %2d | %3.0f%%   %23s%c"
+msgstr "%c%-23s  %3.0f%% | Скорость ветра: %2d | %3.0f%%   %23s%c"
+
+#: main.c:571 main.c:572
+#, c-format
+msgid "%d points"
+msgstr "%d баллов"
+
+#: main.c:589 main.c:613 main.c:632 main.c:658
+msgid "Aim?"
+msgstr "Прицел?"
+
+#: network.c:342
+msgid "\n"
+msgstr ""
+
+#: network.c:408
+#, c-format
+msgid "%d\n"
+msgstr ""
+
+#: scores.c:46
+msgid "r"
+msgstr ""
+
+#: scores.c:104
+msgid "w"
+msgstr ""
+
+#: scores.c:110
+msgid ""
+"# Tornado highscores file - do not edit! Editing voids the file's warranty! "
+";-)\n"
+"\n"
+msgstr ""
+"# Галерея славы Торнадо - баллы не подтасовывать!\n"
+"# Редактирование отменяет действие гарантии на файл! ;-)\n"
+"\n"
+
+#: scores.c:113
+#, c-format
+msgid "%s\t%d\n"
+msgstr ""

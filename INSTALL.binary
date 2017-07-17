@@ -1,0 +1,17 @@
+To install just run the install.sh script as root.
+
+$ su
+$ ./install.sh
+
+or
+
+$ sudo install.sh
+
+That's it. If you want to change the installation path change
+the definition of PREFIX in the script.
+
+
+OS X notes:
+
+Please ignore any warnings or error messages. The translations
+do not work on OS X yet.

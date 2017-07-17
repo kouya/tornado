@@ -1,0 +1,468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: draw.c:743 main.c:212 main.c:378 main.c:384 main.c:389 main.c:391
+#: main.c:559 main.c:564
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-09-22 18:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: draw.c:100
+msgid "___"
+msgstr ""
+
+#: draw.c:101
+msgid "|||"
+msgstr ""
+
+#: draw.c:102
+msgid "/-------'|`-\\"
+msgstr ""
+
+#: draw.c:103
+msgid "/'/////////////`\\"
+msgstr ""
+
+#: draw.c:104
+msgid "|---------------|"
+msgstr ""
+
+#: draw.c:105
+msgid "|-,_____,--,__,-|"
+msgstr ""
+
+#: draw.c:106
+msgid "|-|__|__|--|++|-|"
+msgstr ""
+
+#: draw.c:107
+msgid "|-|__|__|--|o+|-|"
+msgstr ""
+
+#: draw.c:108
+msgid "|----------|++|-|"
+msgstr ""
+
+#: draw.c:109
+msgid "|__________|__|_|"
+msgstr ""
+
+#: draw.c:121 draw.c:123
+msgid "|                           |"
+msgstr ""
+
+#: draw.c:122
+msgid "|      *** CLOUD ***        |"
+msgstr "|      ***  SKY  ***        |"
+
+#: draw.c:124
+msgid "+---------------------------+"
+msgstr ""
+
+#: draw.c:129
+msgid ",/+++*++***+****++++++***+\\, "
+msgstr ""
+
+#: draw.c:130
+msgid "(*+++*****+++++***+++****++) "
+msgstr ""
+
+#: draw.c:131
+msgid "`\\++******+*++*++*****+++*/' "
+msgstr ""
+
+#: draw.c:132
+msgid " `°*,.,*°'`°*,.,*°`°*,.,*°'  "
+msgstr ""
+
+#: draw.c:191 draw.c:201 draw.c:241 draw.c:318 draw.c:328 draw.c:339
+#: draw.c:369
+#, c-format
+msgid "%c"
+msgstr ""
+
+#: draw.c:409 draw.c:410 draw.c:414 draw.c:418 draw.c:424
+msgid "||"
+msgstr ""
+
+#: draw.c:411 draw.c:413 draw.c:417 draw.c:422 draw.c:423 draw.c:426
+#: draw.c:427
+msgid "//"
+msgstr ""
+
+#: draw.c:412 draw.c:416 draw.c:421 draw.c:425
+msgid "//\\\\"
+msgstr ""
+
+#: draw.c:413 draw.c:414 draw.c:415 draw.c:417 draw.c:422 draw.c:423
+#: draw.c:426 draw.c:428 draw.c:429 draw.c:430
+msgid "\\\\"
+msgstr ""
+
+#: draw.c:435 draw.c:436 draw.c:437 draw.c:439 draw.c:440 draw.c:441
+#: draw.c:443 draw.c:444 draw.c:446 draw.c:447 draw.c:448 draw.c:450
+#: draw.c:451 draw.c:452 draw.c:453 draw.c:454
+msgid "  "
+msgstr ""
+
+#: draw.c:438 draw.c:442 draw.c:445 draw.c:449
+msgid "    "
+msgstr ""
+
+#: draw.c:497
+msgid "#"
+msgstr ""
+
+#: draw.c:530 draw.c:569 draw.c:570 draw.c:571 draw.c:572
+msgid " "
+msgstr ""
+
+#: draw.c:557 draw.c:558 draw.c:559
+msgid "+"
+msgstr ""
+
+#: draw.c:557 draw.c:558 draw.c:559
+msgid "*"
+msgstr ""
+
+#: draw.c:581 draw.c:610 draw.c:641 draw.c:688 draw.c:749 draw.c:778
+msgid ",___________________________________,"
+msgstr ""
+
+#: draw.c:582 draw.c:611 draw.c:612 draw.c:613 draw.c:614 draw.c:642
+#: draw.c:643 draw.c:644 draw.c:645 draw.c:779 draw.c:780 draw.c:781
+#: draw.c:782
+msgid "|                                   |"
+msgstr ""
+
+#: draw.c:583
+msgid "              Tornado "
+msgstr "              Tornado "
+
+#: draw.c:584
+msgid "|  s = Snow               r = Rain  |"
+msgstr "|  s = Snø                r = Regn  |"
+
+#: draw.c:585
+msgid "|  h = Hail          l = Lightning  |"
+msgstr "|  h = Hagl          l = Lyn        |"
+
+#: draw.c:586
+msgid "|  t = Tornado  c = Current Scores  |"
+msgstr "|  t = Tornado  c = Poeng hittil    |"
+
+#: draw.c:587
+msgid "|  q = Quit         o = Highscores  |"
+msgstr "|  q = Avslutt      o = Highscores  |"
+
+#: draw.c:588 draw.c:615 draw.c:646 draw.c:693 draw.c:760 draw.c:783
+msgid "+-----------------------------------+"
+msgstr ""
+
+#: draw.c:592 draw.c:593 draw.c:594 draw.c:595 draw.c:596 draw.c:597
+#: draw.c:598 draw.c:626 draw.c:627 draw.c:628 draw.c:629 draw.c:630
+#: draw.c:631 draw.c:660 draw.c:661 draw.c:662 draw.c:663 draw.c:664
+#: draw.c:665 draw.c:722 draw.c:768 draw.c:795 draw.c:796 draw.c:797
+#: draw.c:798 draw.c:799 draw.c:800
+msgid "                                     "
+msgstr ""
+
+#: draw.c:685
+#, c-format
+msgid "|          Player %d wins!           |"
+msgstr "|          Player %d vinner!         |"
+
+#: draw.c:686
+#, c-format
+msgid "|         Your score is %6d.     |"
+msgstr "|     Poengsummen din er %6d.    |"
+
+#: draw.c:691
+msgid "|    Do you want to play again?     |"
+msgstr "|    Vil du spille en ny omgang?    |"
+
+#: draw.c:692
+msgid "|              (y/n)                |"
+msgstr "|              (y/n)                |"
+
+#: draw.c:701 main.c:390 main.c:392 main.c:394 main.c:395 main.c:511
+#: main.c:512
+msgid "Computer"
+msgstr "Datamaskin"
+
+#: draw.c:703
+#, c-format
+msgid "Your score is %6d"
+msgstr "Poengsummen din er %6d"
+
+#: draw.c:705
+msgid "Submit highscore to website?"
+msgstr "Sende inn highscore til spillets hjemmeside?"
+
+#: draw.c:706
+msgid "Needs an internet connection."
+msgstr "Trenger en nettkobling"
+
+#: draw.c:707
+msgid "(y/n)"
+msgstr ""
+
+#: draw.c:711
+#, c-format
+msgid ""
+"wget -q -O - 'http://www.lionking.org/~kiza/linux/tornado/score?score=%"
+"d&name=%s'"
+msgstr ""
+
+#: draw.c:743
+msgid "Error reading scorefile:"
+msgstr "Problemer med å lese poengfil:"
+
+#: draw.c:743
+msgid "File format error"
+msgstr "Feil i filformat"
+
+#: draw.c:750
+msgid "|             Highscores            |"
+msgstr "|         Highscore liste           |"
+
+#: draw.c:754
+#, c-format
+msgid "| %2d  %21s  %6d |"
+msgstr ""
+
+#: main.c:80
+msgid "Please enter your name Player 1"
+msgstr "Vennligst skriv inn navnet til spiller 1"
+
+#: main.c:81
+msgid "Please enter your name Player 2"
+msgstr "Vennligst skriv inn navnet til spiller 2"
+
+#: main.c:104 main.c:106
+#, c-format
+msgid "%s quit the game.\n"
+msgstr "%s avslutt spillet.\n"
+
+#: main.c:108
+msgid "You quit the game.\n"
+msgstr "Du avsluttet spillet.\n"
+
+#: main.c:110
+msgid "Thanks for playing Tornado!\n"
+msgstr "Takk for at du spilte Tornado!\n"
+
+#: main.c:126 main.c:144
+msgid "Error reading from network: "
+msgstr "Feil ved lesing fra nettverk: "
+
+#: main.c:135 main.c:153 main.c:162
+msgid "Error writing to network: "
+msgstr "Feil ved skriving til nettverk: "
+
+#: main.c:171
+msgid "Error reading network: "
+msgstr "Feil ved lesing av nettverk: "
+
+#: main.c:213 main.c:214
+msgid "tornado"
+msgstr ""
+
+#: main.c:220 main.c:343
+msgid "--demo"
+msgstr ""
+
+#: main.c:282 main.c:344
+msgid "--server"
+msgstr ""
+
+#: main.c:284
+#, c-format
+msgid "Waiting for connection on port %d...\n"
+msgstr "Venter på tilkobling på port %d...\n"
+
+#: main.c:286
+msgid "Could not initialize Network"
+msgstr "Kunne ikke initialisere nettverk"
+
+#: main.c:287 main.c:317 main.c:321
+msgid "Exiting.\n"
+msgstr "Avslutter.\n"
+
+#: main.c:290
+#, c-format
+msgid ""
+"Client from %s connected at port %d.\n"
+"\n"
+msgstr ""
+"Klient fra %s koblet til port %d.\n"
+"\n"
+
+#: main.c:295
+#, c-format
+msgid ""
+"Program versions mismatch! You are running version %s, client is %s.\n"
+"You can play, but the game will get out of sync and probably crash.\n"
+"\n"
+msgstr ""
+"Program versjon konflikt! Du kjører versjon %s, klienten er %s.\n"
+"Du kan fortsette, men spillet kan miste synk og antakligvis kræsje.\n"
+"\n"
+
+#: main.c:306 main.c:342
+msgid "--connect"
+msgstr ""
+
+#: main.c:310
+msgid "No hostname specified. Exiting...\n"
+msgstr "Ingen tjenernavn er spesifisert. Avslutter...\n"
+
+#: main.c:313
+#, c-format
+msgid "Connecting to server %s on port %d...\n"
+msgstr "Kobler til tjeneren %s på port %d...\n"
+
+#: main.c:316
+msgid "Could not connect to server"
+msgstr "Kunne ikke koble til tjener"
+
+#: main.c:320
+msgid "Could not connect to server: hostname lookup failure\n"
+msgstr "Kunne ikke koble til tjener: feil ved navneoppslag\n"
+
+#: main.c:324
+#, c-format
+msgid ""
+"Connection to server %s established.\n"
+"\n"
+msgstr ""
+"Tilkobling til tjener %s er oppnådd.\n"
+"\n"
+
+#: main.c:328
+#, c-format
+msgid ""
+"Program versions mismatch! Your are running version %s, server is %s.\n"
+"You can play, but the game will get out of sync and probably crash.\n"
+"\n"
+msgstr ""
+"Program versjon konflikt! Du kjører versjon %s, tjeneren er %s.\n"
+"Du kan fortsette, men spillet kan miste synk og antakligvis kræsje.\n"
+"\n"
+
+#: main.c:336 main.c:345
+msgid "--version"
+msgstr ""
+
+#: main.c:337
+#, c-format
+msgid "Tornado version %s\n"
+msgstr "Tornardo versjon %s\n"
+
+#: main.c:342
+msgid "--help"
+msgstr ""
+
+#: main.c:346
+msgid "--get-players"
+msgstr ""
+
+#: main.c:347
+#, c-format
+msgid ""
+"Tornado %s\n"
+"\n"
+msgstr ""
+
+#: main.c:348
+msgid ""
+"usage: [--connect IP|--demo|--help|--server]\n"
+"\n"
+msgstr ""
+"bruk: [--connect IP|--demo|--help|--server]\n"
+"\n"
+
+#: main.c:349
+msgid "\t--connect [IP]\tConnect to IP/host for network play.\n"
+msgstr "\t--connect [IP]\tKoble til IP/host for nettverkspill.\n"
+
+#: main.c:350
+msgid "\t--demo\t\tRun in demo mode.\n"
+msgstr "\t--demo\t\tKjør i demo modus.\n"
+
+#: main.c:352
+msgid "\t--help\t\tPrint this help message.\n"
+msgstr "\t--help\t\tSkriv ut denne hjelpemeldingen.\n"
+
+#: main.c:355
+msgid "\t--server\tRun as server so others can connect.\n"
+msgstr "\t--server\tKjør som server slik at andre kan koble til.\n"
+
+#: main.c:356
+msgid "\t--version\tPrint version number and exit.\n"
+msgstr "\t--version\tSkriv ut versjonsnummer og avslutt.\n"
+
+#: main.c:376 main.c:382
+msgid "Please enter your name"
+msgstr "Vennligst skriv inn navnet ditt"
+
+#: main.c:378 main.c:384 main.c:559 main.c:564
+msgid "Waiting for other player..."
+msgstr "Venter på andre spillere..."
+
+#: main.c:464 main.c:495 scores.c:82
+#, c-format
+msgid "%d"
+msgstr ""
+
+#: main.c:473
+#, c-format
+msgid "%c%-23s  %3.0f%% | Windspeed: %2d | %3.0f%%   %23s%c"
+msgstr "%c%-23s  %3.0f%% | Vindfart: %2d  | %3.0f%%   %23s%c"
+
+#: main.c:592 main.c:593
+#, c-format
+msgid "%d points"
+msgstr "%d poeng"
+
+#: main.c:610 main.c:634 main.c:653 main.c:679
+msgid "Aim?"
+msgstr "Sikte?"
+
+#: network.c:326
+msgid "\n"
+msgstr ""
+
+#: network.c:388
+#, c-format
+msgid "%d\n"
+msgstr ""
+
+#: scores.c:44
+msgid "r"
+msgstr ""
+
+#: scores.c:97
+msgid "w"
+msgstr ""
+
+#: scores.c:103
+msgid ""
+"# Tornado highscores file - do not edit! Editing voids the file's "
+"warranty! ;-)\n"
+"\n"
+msgstr ""
+
+#: scores.c:106
+#, c-format
+msgid "%s\t%d\n"
+msgstr ""

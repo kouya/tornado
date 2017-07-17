@@ -1,0 +1,194 @@
+1.3
+	Changes:
+	- Colors on terminals that support it.
+
+	Bugfixes:
+	- Compiles on Mac OS X Panther again.
+	  (Must not abuse cpp for Makefile magic.)
+
+1.2.1a
+	This version only adds some translations.
+
+	Changes:
+	- Added Dutch manpage.
+	- Added Norwegian translation (+manpage).
+
+1.2.1
+	Changes:
+	- Improved network version checking code. The game now only
+	  complains if version of network code itself differs.
+	- Added Italian translation (+manpage).
+	- Russian translation (+manpage) added.
+	- Added Dutch translation.
+
+1.2
+	Bugfixes:
+	- "snow deletes the bottom line"-bug fixed. Finally!
+
+	Changes:
+	- Added Spanish translation.
+	- Added French manpage
+
+1.0.6-pre3
+	Changes:
+	- Added Portuguese translation.
+
+1.0.6-pre2
+	Bugfixes:
+	- Fixed wrong hostname in highscore submission code. Actually
+	  this has been corrected silently in the 1.0.5 package. :)
+
+	Changes:
+	- The game now shows who has quit the game in network mode.
+	- Snow does not count as part of the house anymore. Thus if
+	  your house is completely gone and only some snow is left
+	  you loose from now on. ;)
+	- Updated manpages.
+
+1.0.5
+	Bugfixes:
+	- Fixed buffer overflow in network version checking code. Argh!
+	- Highscore files got broken on reinstalling? Mine did. This is
+	  hopefully fixed now.
+
+	Changes:
+	- French translation
+	- Restructuring of the program package. doc/man/, po/, etc.
+	- Added German manpage.
+	- Complete rewrite of AI (should be much better now).
+	- Source code cleanup.
+
+1.0.4
+	Changes:
+	- Added German translation.
+
+	Bugfixes:
+	- The screen is now cleared correctly if you restart a new game.
+	  Sometimes remnants of snow have been left on the screen.
+
+1.0.3
+	Changes:
+	- Maximum player name length now 21 characters. That broke some
+	  scorefiles. On installing the game too long playernames in the
+	  scorefile will now be truncated.
+
+	Bugfixes:
+	- Sample scorefile that comes with the package wasn't corrected
+	  for the new highscore system.
+	- Rewrote the highscores handling code to fix the buffer overflow
+	  bugs and other strange things (reading names with spaces in them
+	  lead to problems).
+
+1.0.2
+	Changes:
+	- The manpage is not installed executable and more.
+	- World Highscore system on the tornado webpage where you can
+	  submit your scores automatically at the end of each game.
+	- Scores are much higher now:
+	  final score = final score * % of your house remaining
+	- Improved AI aiming
+
+	Bugfixes:
+	- Fixed segfault with "--connect" and non existent hostname.
+
+1.0.1
+	Changes:
+	- "Current Scores" in main menu shows the player names instead
+	  "Player 1" and "Player 2".
+	- The Makefile is really perverted now. :^)
+
+	Bugfixes:
+	- Fix in the Makefile/install section. Now we test if the directories
+	  exist before we put something in there.
+	- Tiny fixes and changes.
+
+1.0
+	Changes:
+	- Lightning now flashes the screen. :^)
+	- Location of the highscores files changed to /var/games. You may
+	  want to copy your old file there.
+	- Scoring system has changed. Higher is better now. Hmm, on a
+	  second thought you don't want to keep your old scorefile.
+	- Snow is now a defensive weapon. See the manpage for details.
+	- Changed the way rain, snow, hail fall down.
+
+	Bugfixes:
+	- Someone may have noticed strange numbers drawn on the screen
+	  when selecting lightning in non-networkplay mode. They're gone.
+	- The program does not segfault when no hostname is specified
+	  for "--connect". Other than that, the networking code
+	  implemented in version 1.0pre4 seems to be working smoothly.
+	- The highscores file is not any more overwritten when installing
+	  a new version.
+	  - Fixed segfault when trying to show highscores or write a new
+	highscore when the tornado.highscores file is missing or
+	  unreadable.
+	- Highscore file wasn't written when you quit the game with 'no'
+	  at the end. Stupid bug.
+	- Various typos and other tiny things.
+
+	Notes:
+	- This version will not work together with 1.0pre4 in network
+	  mode.
+
+1.0pre4
+	Changes:
+	- Network playing implemented. Starting the game with --server will
+	  start the game in server mode where you can connect with --connect host.
+
+	Bugfixes:
+	- The winning screen was not cleared when you started a new game.
+	
+	Notes:
+	- Network mode is not really tested. I would not recommend running
+	  it as root. There may be buffer overflow bugs lurking in the code.
+
+1.0pre3
+	Changes:
+	- You can now play the game against the computer as well. The AI
+	  still needs a bit finetuning but the game should be much more
+	  interesting now if you haven't got anybody to play it with.
+	- A highscore system has been implemented.
+
+	Notes:
+	- Looks like everything is implemented now and the game is ready
+	  for the 1.0 release. Only little things here and there need
+	  changes I think. Network play will be done later.
+	- If you have more suggestions let me hear them. :-)
+
+1.0pre2
+	The code should be well commented now (well mostly). If you use
+	jed you can fold and unfold all functions in draw.c now. This was
+	the first version announced on freshmeat.
+
+	Changes:
+	- The program now clears the screen on exit.
+
+	Bugfixes:
+	- draw.c: The function draw_dialog() now uses getnstr to get the
+	  user input. You can type names with a max length of 23
+	  characters now.
+
+	Notes:
+	- The function getnstr() seems not to be implemented in earlier
+	  versions of libncurses. I have version 5.0 installed but it does
+	  not compile on FreeBSD 3.1 with libncurses 3.0 installed. If you
+	  get "undefined reference to 'getnstr'" during compiling you'll
+	  have to upgrade to 5.0.
+
+1.0pre1
+	All bugs I have noticed so far were fixed. This is the first
+	version released into the wild.
+	If you look at the source code, it's still kinda uncommented. I'd
+	like to change that in one of the next versions.
+
+0.9
+	Big version number jump. I don't like version numbers like 0.0.1
+	or 0.1234.a12 so I chose that 1.0 would be the first release
+	version of the program.
+	0.9 was already playable however an unnoticed buffer overflow bug
+	prevented you from playing another game after you destroyed your
+	opponents house.
+
+0 - 0.9
+	No public releases.

@@ -1,0 +1,11 @@
+DISTFILES = AUTHOR COPYING CREDITS Changelog INSTALL README TODO \
+	Makefile Makefile.distfiles Makefile.inc convert-highscorefile \
+	doc po tornado.scores \
+	draw.c erwin.c main.c network.c scores.c \
+	draw.h erwin.h main.h network.h scores.h version.h
+
+BINARYDISTFILES = AUTHOR COPYING CREDITS Changelog README INSTALL.binary TODO \
+	tornado tornado.scores \
+	doc/man/tornado.6 \
+	po/*.mo po/messages.po \
+	scripts/install.sh

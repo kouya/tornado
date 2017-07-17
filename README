@@ -1,0 +1,104 @@
+                             Tornado readme file
+                     (last modified September 3rd, 2002)
+
+License:
+
+Tornado is released under the conditions of the GNU General Public
+License. See the file COPYING included in this software package for
+details. This program comes with NO WARRANTY of any kind and is provided
+as "AS IS". See section 11 of the GNU General Public License.
+
+For a detailed description of the program see the tornado manpage or
+the webpage at https://kiza.eu/software/tornado/
+
+The multiplayer server of Tornado runs on port 3000 TCP. The port is
+defined in the file main.c.
+
+Installing:
+
+The short way:
+
+	make
+	make install (as root).
+
+Uncompress the archive (what you'll likely have already done) and just
+type "make". When compiling is finished type "make install" as root. That
+will install the tornado binary in /usr/local/bin/tornado, the manpage
+in /usr/local/man/man6/tornado.6 and the scorefile in
+/var/games/tornado.scores (location changed in version 1.0). If you'd like
+to place the files into a different directory, edit the "Makefile" and
+change the variable "PREFIX". Setting it to "/usr" will install in
+/usr/bin and /usr/man/man6 for example.
+
+If the program does not compile on your system make sure you've got
+the latest version of gcc and the ncurses library. If the program
+still does not compile you can write me a mail at kiza@gmx.net. If you
+get the error message "undefined reference to 'getnstr'" when
+compiling the program you've got a too old version of the ncureses
+library that doesn't implement the 'getnstr' function. Sorry, but you
+can't compile it unless you upgrade to ncurses 5.0.
+
+System Requirements:
+- A working C compiler environment.
+- GNU make
+- GNU utils.
+- GNU textutils.
+- ncurses 5.0 or above (It may compile on earlier version; see above).
+- GNU wget is required for the online highscore and online players site.
+  The game runs without it in single/multiplayer/network play as well.
+
+If the locale stuff does not work for some reason
+(main.c:32: libintl.h: No such file or directory), you can still
+compile and install the program with "make tornado-no-locale" and
+"make tornado-no-locales-install".
+
+
+ncurses vc. curses:
+
+The program also works with BSD curses. To compile with curses, edit
+the Makefile and replace "-lncurses" with "-lcurses" in the line LDFLAGS
+on top of the file. The 'getnstr' notice from above applies to curses, too.
+
+
+How to activate the computer player:
+
+If you want to play against the computer, just leave the field for one of
+the players blank when you are asked for the names. The computer will take
+over that part. See also the tornado manpage.
+
+
+Misc stuff:
+
+After Tornado was announced on freshmeat for the first time on Sun Apr
+23th, 2000 the webpage had 500 hits and the program was downloaded about
+200 times within the first 12 hours. I dunno if the program is really that
+good or if this is just called "the freshmeat effect" like the well known
+"slashdot effect". Thanks to all who downloaded and like the program. :-)
+
+
+The why-does-lightning-not-flash-my-screen-bug:
+
+It's not my fault(tm). Either your ncurses is causing that problem or you
+are running Tornado inside an xterm or <insert your favourite terminal
+program here>. It does not work in my xterm either. The screen is just
+drawn to fast. Try it on a text console.
+
+
+Tornado Tournament:
+
+There is a world highscore system available on the tornado website. At the
+end of each game you are asked if you want to submit your highscore to the
+website. The score will then be submitted via a CGI script on the webserver
+using wget. This system is not really cheat-proof. Please don't abuse it.
+Your score/nickname will then be visible on the website together with the
+hostname/IP from where the score was submitted.
+
+
+The where-is-the-windspeed-bug:
+
+If you're running tornado in a terminal window under X make sure your window
+is at least 80x25 big. Standard size for most terminals is 80x24. So the
+bottom line is missing there.
+
+
+-Oliver

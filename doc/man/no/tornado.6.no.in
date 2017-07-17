@@ -1,0 +1,107 @@
+.\" Tornado manpage
+.\"
+.\" This manpage is Copyright (C) 2000 Oliver Feiler
+.\"                               <kiza@gmx.net>
+.\"
+.TH TORNADO 6 "31 January 2002" Games "Tornado VERSION"
+.SH NAME
+.B tornado
+\- klone av det orginale C64 spillet.
+.SH SYNOPSIS
+.B tornado [--connect IP|--demo|--help|--server|--version]
+.SH DESCRIPTION
+Spillets objektiv
+.B tornado
+er å ødelegge motstanderens hus med kreftene til regn, snø, hagl, lyn 
+og torden.
+.P
+Etter at spillet har startet skriver de to spillerne inn navnene sine.
+Om du lar feltet stå tom vil datamaskinen ta spillerens plass.  Du kan se
+to hus med navnet til hver spiller i hjørnet nedenfor husene og en sky på 
+toppen av skjermen.  Spilleren som er i spill har en stjerne 
+.I *
+ved siden av navnet sitt.
+.P
+Fra menyen i midten av skjermen velger hver
+spiller et værfenomen. En ny boks vil dukke opp hvor du kan velge en 
+verdi for hvor du vil sikte.  Du har kanskje lagt merke til verdien 
+.I Vindfart
+nederst i midten av skjermen.  Ideelt
+ville du valgt å sikte med verdien 
+.I 2
+hvis vindfarten er 
+.I -2
+hvilket da regn/hagl/snø/tornadoen ville gått rett ned fra skyen. Men, 
+den blir valgt vilkårlig om regnet havner på venstre eller høyre side
+av skyen, så å sikte er ikke nødvendigvis så lett som det ser ut.
+.P
+Dersom du treffer motstanderens (eller ditt eget) hus vil 
+prosenttelleren synke avhengig av hvor mye skade du gjorde. Hvis 
+telleren går ned til 
+.I 0%
+taper spilleren spillet.
+.P
+Tastene du kan bruke i spillet er:
+.TP
+.B s " velger snø"
+Snø er et defensivt våpen. Om du treffer et hus med snø vil det dekke huset
+med et lag som hagl ikke kan ødelegge.  Kun regn kan brukes til å fjerne
+snødekket.  Lyn og torden blir ikke påvirket.
+.TP
+.B r " velger regn"
+Ødelegger ett lag fra et hus. Kan også brukes til å smelte et lag med snø."
+.TP
+.B h " velger hagl"
+Dette vil ødelegge to lag fra huset, og kan også ødelegge snødekke.
+.TP
+.B l " velger lyn"
+Deler huset i to biter. Påvirkes ikke av vind.
+.TP
+.B t " velger tornado"
+Ikke like effektivt som lyn, men tornadoen går i tillegg rett i bunnen 
+av huset
+.TP
+.B q " avslutter spillet"
+.TP
+.B o " viser highscoreliste"
+.TP
+.B c " viser poengsummen hittil i spillet"
+.SH OPTIONS
+Du kan starte spillet med følgende kommandolinje opsjoner:
+.P
+.B \-\-connect IP,
+Spillet vil koble til tjeneren med gitt IP eller navn.
+.P
+.B \-\-demo,
+Demonstrasjonsmodus.
+.P
+.B \-\-help,
+Kort hjelpelisting.
+.P
+.B \-\-server,
+Starter spillet i servermodus og venter på at en klient skal tilkobles.
+.P
+.B \-\-version,
+Viser programmets versjon og avslutter.
+.SH FILES
+PREFIX/bin/tornado
+.P
+PREFIX/man/man6/tornado.6
+.P
+/var/games/tornado.scores
+.P
+/usr/local/share/locale/de/LC_MESSAGES/tornado.mo
+.P
+/usr/local/share/locale/fr/LC_MESSAGES/tornado.mo
+.SH NOTES
+Når du starter spillet i nettverksmodus bør du ha samme versjon på klient
+og tjener. Versjoner før 1.0pre4 vil ikke virke i det heletatt på grunn
+av mangel på nettverkstøtte. Spillet vil starte med forskjellige versjoner,
+men vil antakligvis kræsje når som helst om det er for mange forskjeller
+mellom versjonene.
+.P
+Tornado spilltjeneren kjører på port 3000 TCP. (hardkodet i main.c)
+.SH BUGS
+Du får også poeng for å ødelegge ditt eget hus. :^)
+.SH AUTHOR
+Oliver Feiler <kiza@kcore.de>

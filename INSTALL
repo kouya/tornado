@@ -1,0 +1,20 @@
+Installation:
+
+	make
+	make install (as root)
+
+
+For more detailed instructions see the file README.
+
+
+Possible Makefile targets:
+
+make, make all:		builds everything
+make tornado.6:		builds just the manpage
+make tornado:		only the binary
+make debug:		build a binary with debug code
+make static:		build the binary static
+make clean:		deletes all object files and the binary
+make new:		make clean, make all
+make install:		installs binary and manpage in $(PREFIX)
+make uninstall:		removes them from $(PREFIX)
